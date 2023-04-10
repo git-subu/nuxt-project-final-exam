@@ -34,7 +34,7 @@
       body: JSON.stringify(data),
     };
     // Storing employee details in localstorage
-    localStorage.setItem("data-builder", body);
+    localStorage.setItem("employeeGetData", body);
      employerData.value.unshift(data);
     addRender.value++;
   };
@@ -50,7 +50,7 @@
   // Delete Employee
   const deleteDetails = (data: any) => {
     employerData.value.splice(data, 1);
-    localStorage.setItem("peopleList", JSON.stringify(employerData.value));
+    localStorage.setItem("employeeGetData", JSON.stringify(employerData.value));
   };
   </script>
   
